@@ -19,7 +19,7 @@ new THREE.RGBELoader()
     .setDataType(THREE.UnsignedByteType) // Depending on the HDR content
     .load('forest.hdr', function(texture) {
         var envMap = pmremGenerator.fromEquirectangular(texture).texture;
-        scene.background = envMap;
+        scene.background = new THREE.Color(0x333333);
         scene.environment = envMap;
 
         texture.dispose();
