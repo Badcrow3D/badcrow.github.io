@@ -32,9 +32,16 @@ new THREE.RGBELoader()
 var pmremGenerator = new THREE.PMREMGenerator(renderer);
 pmremGenerator.compileEquirectangularShader();
 
-
+// GLTF Loader
+    const loader = new THREE.GLTFLoader();
+    loader.load('testglb.glb', function (gltf) {
+        scene.add(gltf.scene);
+    }, undefined, function (error) {
+        console.error(error);
+    });
 
 // Polycube configuration
+/*
 function createPolycube() {
     var geometry = new THREE.BoxGeometry(); // Unit cube geometry
     var material = new THREE.MeshStandardMaterial({
@@ -53,6 +60,7 @@ function createPolycube() {
         }
     }
 }
+*/
 
 createPolycube();
 
