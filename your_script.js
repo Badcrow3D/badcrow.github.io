@@ -6,7 +6,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // Adjust camera position
-camera.position.z = 15; // Increase the z distance so all cubes are visible
+camera.position.z = 1; // Increase the z distance so all cubes are visible
 
 // OrbitControls for camera manipulation
 var controls = new THREE.OrbitControls(camera, renderer.domElement);
