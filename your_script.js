@@ -62,7 +62,7 @@ function createPolycube() {
 }
 */
 
-createPolycube();
+//createPolycube();
 
 
 
