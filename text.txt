@@ -1,0 +1,1 @@
+The user can apply a special substitution list to improve the quality of the voice's articulation. This feature is useful when you want to change the spelling of words.
